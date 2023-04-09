@@ -10,16 +10,28 @@ using System.Windows.Forms;
 
 namespace Drzavna_matura___Jovan_Dragas
 {
-    public partial class Form1 : Form
+    public partial class Form1 : System.Windows.Forms.Form
     {
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2(this);
+            if (comboBox1.Text != "" && comboBox2.Text != "") { f2.Show(); this.Hide(); }
+            else MessageBox.Show("Niste uneli neki obavezan podatak", "Error 404");
         }
     }
 }

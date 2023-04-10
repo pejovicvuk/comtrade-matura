@@ -19,6 +19,16 @@ namespace Drzavna_matura___Jovan_Dragas
         {
             InitializeComponent();
             this.f1 = frm1;
+            string skola = f1.comboBox1.Text;
+            if (skola.Contains("гимназија")) { comboBox1.Items.Clear(); comboBox1.Items.Add("ОПШТА"); }
+            if (skola.Contains("Музичка") || skola.Contains("Балетска") || skola.Contains("арт"))
+            {
+                comboBox1.Items.Clear(); comboBox1.Items.Add("УМЕТНИЧКА");
+            }
+            if (!skola.Contains("Музичка") && !skola.Contains("Балетска") && !skola.Contains("арт") && skola.Contains("школа"))
+            {
+                comboBox1.Items.Clear(); comboBox1.Items.Add("СТРУЧНА");
+            }
         }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -41,10 +51,14 @@ namespace Drzavna_matura___Jovan_Dragas
             if (comboBox1.Text == "СТРУЧНА") comboBox5.Visible = true; else { comboBox5.Visible = false; }
             if (comboBox1.Text == "УМЕТНИЧКА") 
             { 
-                comboBox4.Items.Clear(); 
-                comboBox4.Items.Add("Солфеђо");
-                comboBox4.Items.Add("Хармонија");
-                comboBox4.Items.Add("Не полаже 3. предмет");
+                comboBox4.Items.Clear();
+                string skola = f1.comboBox1.Text;
+                if (skola.Contains("Музичка"))
+                {
+                    comboBox4.Items.Add("Солфеђо");
+                    comboBox4.Items.Add("Хармонија");
+                }
+                else { comboBox4.Items.Add("Не полаже 3. предмет"); }
             }
             if (comboBox1.Text == "СТРУЧНА")
             {
@@ -194,17 +208,16 @@ namespace Drzavna_matura___Jovan_Dragas
             if (textBox1.Text != "" && textBox2.Text != "" && comboBox1.Text != "ТИП МАТУРЕ" && comboBox2.Text != "1. предмет" && comboBox3.Text != "2. предмет" && comboBox4.Text != "3. предмет" && comboBox4.Text != "Изаберите област")
             {
                 listBox1.Items.Add(string.Format("{0}, 4-{1}, {2}, {3}, {4} матура, {5}, {6}, {7}", skola, odeljenje, textBox1.Text, textBox2.Text, comboBox1.Text, comboBox2.Text, comboBox3.Text, comboBox4.Text));
+                StreamWriter writer = new StreamWriter("podaci.txt", true);
+                writer.WriteLine(string.Format("{0}, 4-{1}, {2}, {3}, {4} матура, {5}, {6}, {7};", skola, odeljenje, textBox1.Text, textBox2.Text, comboBox1.Text, comboBox2.Text, comboBox3.Text, comboBox4.Text));
+                writer.Close();
                 comboBox2.Text = "1. предмет"; comboBox3.Text = "2. предмет"; comboBox4.Text = "3. предмет"; comboBox5.Text = "Област 3. предмета";
             }
             else
             {
                 MessageBox.Show("Neki podatak je nepravilno ili nije unesen.", "Unakazices neko dete");
             }
-            StreamWriter writer = new StreamWriter("podaci.txt", true);
-            writer.WriteLine(string.Format("{0}, 4-{1}, {2}, {3}, {4} матура, {5}, {6}, {7};", skola, odeljenje, textBox1.Text, textBox2.Text, comboBox1.Text, comboBox2.Text, comboBox3.Text, comboBox4.Text));
-            writer.Close();
         }
-
         private void button5_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();

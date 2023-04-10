@@ -39,7 +39,6 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -183,7 +182,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(588, 455);
+            this.button1.Location = new System.Drawing.Point(664, 455);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 57);
             this.button1.TabIndex = 16;
@@ -191,30 +190,21 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Location = new System.Drawing.Point(714, 455);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 57);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Zatrazi izmenu";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Yellow;
-            this.button3.Location = new System.Drawing.Point(840, 455);
+            this.button3.Location = new System.Drawing.Point(801, 455);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(120, 57);
             this.button3.TabIndex = 18;
-            this.button3.Text = "Potvrdi izmenu";
+            this.button3.Text = "Prikazi sve podatke";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(966, 455);
+            this.button4.Location = new System.Drawing.Point(936, 455);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(120, 57);
             this.button4.TabIndex = 19;
@@ -226,7 +216,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(1092, 455);
+            this.button5.Location = new System.Drawing.Point(1071, 455);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(120, 57);
             this.button5.TabIndex = 20;
@@ -243,7 +233,6 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.listBox1);
@@ -273,7 +262,6 @@
         public System.Windows.Forms.ComboBox comboBox4;
         public System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         public System.Windows.Forms.ListBox listBox1;

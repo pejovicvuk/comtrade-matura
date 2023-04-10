@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,11 +20,32 @@ namespace Drzavna_matura___Jovan_Dragas
             InitializeComponent();
             this.f1 = frm1;
         }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (comboBox1.Text == "ОПШТА")
+            {
+                comboBox4.Text = "3. предмет";
+                comboBox4.Items.Add("Биологија");
+                comboBox4.Items.Add("Географија");
+                comboBox4.Items.Add("Енглески језик");
+                comboBox4.Items.Add("Историја");
+                comboBox4.Items.Add("Италијански језик");
+                comboBox4.Items.Add("Немачки језик");
+                comboBox4.Items.Add("Руски језик");
+                comboBox4.Items.Add("Српски као нематерњи језик");
+                comboBox4.Items.Add("Физика");
+                comboBox4.Items.Add("Француски језик");
+                comboBox4.Items.Add("Хемија");
+                comboBox4.Items.Add("Шпански језик");
+            }
             if (comboBox1.Text == "СТРУЧНА") comboBox5.Visible = true; else { comboBox5.Visible = false; }
-            if (comboBox1.Text == "УМЕТНИЧКА") { comboBox4.Items.Clear(); comboBox4.Items.Add("Солфеђо и хармонија"); }
+            if (comboBox1.Text == "УМЕТНИЧКА") 
+            { 
+                comboBox4.Items.Clear(); 
+                comboBox4.Items.Add("Солфеђо");
+                comboBox4.Items.Add("Хармонија");
+                comboBox4.Items.Add("Не полаже 3. предмет");
+            }
             if (comboBox1.Text == "СТРУЧНА")
             {
                 comboBox4.Items.Clear(); comboBox4.Text = "Изаберите област";
@@ -165,7 +187,6 @@ namespace Drzavna_matura___Jovan_Dragas
         {
             listBox1.Items.Clear();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             string skola = f1.comboBox1.Text;
@@ -173,17 +194,25 @@ namespace Drzavna_matura___Jovan_Dragas
             if (textBox1.Text != "" && textBox2.Text != "" && comboBox1.Text != "ТИП МАТУРЕ" && comboBox2.Text != "1. предмет" && comboBox3.Text != "2. предмет" && comboBox4.Text != "3. предмет" && comboBox4.Text != "Изаберите област")
             {
                 listBox1.Items.Add(string.Format("{0}, 4-{1}, {2}, {3}, {4} матура, {5}, {6}, {7}", skola, odeljenje, textBox1.Text, textBox2.Text, comboBox1.Text, comboBox2.Text, comboBox3.Text, comboBox4.Text));
+                comboBox2.Text = "1. предмет"; comboBox3.Text = "2. предмет"; comboBox4.Text = "3. предмет"; comboBox5.Text = "Област 3. предмета";
             }
             else
             {
                 MessageBox.Show("Neki podatak je nepravilno ili nije unesen.", "Unakazices neko dete");
-            }    
+            }
+            StreamWriter writer = new StreamWriter("podaci.txt", true);
+            writer.WriteLine(string.Format("{0}, 4-{1}, {2}, {3}, {4} матура, {5}, {6}, {7};", skola, odeljenje, textBox1.Text, textBox2.Text, comboBox1.Text, comboBox2.Text, comboBox3.Text, comboBox4.Text));
+            writer.Close();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
             f1.Show(); this.Hide();
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("notepad.exe", "podaci.txt");
         }
     }
 }

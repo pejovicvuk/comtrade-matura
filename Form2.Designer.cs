@@ -42,15 +42,17 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
-            this.textBox1.Location = new System.Drawing.Point(28, 65);
+            this.textBox1.Location = new System.Drawing.Point(18, 102);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 31);
+            this.textBox1.Size = new System.Drawing.Size(212, 26);
             this.textBox1.TabIndex = 2;
             this.textBox1.UseWaitCursor = true;
             // 
@@ -58,19 +60,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label1.Location = new System.Drawing.Point(24, 40);
+            this.label1.Location = new System.Drawing.Point(15, 81);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 22);
+            this.label1.Size = new System.Drawing.Size(97, 18);
             this.label1.TabIndex = 7;
             this.label1.Text = "Име ученика";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
-            this.textBox2.Location = new System.Drawing.Point(28, 139);
+            this.textBox2.Location = new System.Drawing.Point(18, 162);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(282, 31);
+            this.textBox2.Size = new System.Drawing.Size(212, 26);
             this.textBox2.TabIndex = 8;
             this.textBox2.UseWaitCursor = true;
             // 
@@ -78,9 +82,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label2.Location = new System.Drawing.Point(24, 114);
+            this.label2.Location = new System.Drawing.Point(15, 142);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 22);
+            this.label2.Size = new System.Drawing.Size(129, 18);
             this.label2.TabIndex = 9;
             this.label2.Text = "Презиме ученика";
             // 
@@ -92,9 +97,10 @@
             "ОПШТА",
             "СТРУЧНА",
             "УМЕТНИЧКА"});
-            this.comboBox1.Location = new System.Drawing.Point(28, 203);
+            this.comboBox1.Location = new System.Drawing.Point(18, 214);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(282, 30);
+            this.comboBox1.Size = new System.Drawing.Size(212, 25);
             this.comboBox1.TabIndex = 10;
             this.comboBox1.Text = "ТИП МАТУРЕ";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -112,9 +118,10 @@
             "Румунски језик и књижевност",
             "Словачки језик и књижевност",
             "Хрватски језик и књижевност"});
-            this.comboBox2.Location = new System.Drawing.Point(28, 277);
+            this.comboBox2.Location = new System.Drawing.Point(18, 274);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(281, 30);
+            this.comboBox2.Size = new System.Drawing.Size(212, 25);
             this.comboBox2.TabIndex = 11;
             this.comboBox2.Text = "1. предмет";
             // 
@@ -124,9 +131,10 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Математика"});
-            this.comboBox3.Location = new System.Drawing.Point(28, 343);
+            this.comboBox3.Location = new System.Drawing.Point(18, 328);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(281, 30);
+            this.comboBox3.Size = new System.Drawing.Size(212, 25);
             this.comboBox3.TabIndex = 12;
             this.comboBox3.Text = "2. предмет";
             // 
@@ -147,9 +155,10 @@
             "Француски језик",
             "Хемија",
             "Шпански језик"});
-            this.comboBox4.Location = new System.Drawing.Point(28, 431);
+            this.comboBox4.Location = new System.Drawing.Point(18, 399);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(282, 30);
+            this.comboBox4.Size = new System.Drawing.Size(212, 25);
             this.comboBox4.TabIndex = 13;
             this.comboBox4.Text = "3. предмет";
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
@@ -157,10 +166,10 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(453, 27);
+            this.listBox1.Location = new System.Drawing.Point(305, 50);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(771, 324);
+            this.listBox1.Size = new System.Drawing.Size(588, 303);
             this.listBox1.TabIndex = 14;
             // 
             // comboBox5
@@ -171,9 +180,10 @@
             "ОПШТА",
             "СТРУЧНА",
             "УМЕТНИЧКА"});
-            this.comboBox5.Location = new System.Drawing.Point(28, 395);
+            this.comboBox5.Location = new System.Drawing.Point(18, 370);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(441, 30);
+            this.comboBox5.Size = new System.Drawing.Size(332, 25);
             this.comboBox5.TabIndex = 15;
             this.comboBox5.Text = "Област 3. предмета";
             this.comboBox5.Visible = false;
@@ -182,9 +192,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(664, 455);
+            this.button1.Location = new System.Drawing.Point(498, 370);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 57);
+            this.button1.Size = new System.Drawing.Size(90, 46);
             this.button1.TabIndex = 16;
             this.button1.Text = "Unesi podatak";
             this.button1.UseVisualStyleBackColor = false;
@@ -193,9 +204,10 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Yellow;
-            this.button3.Location = new System.Drawing.Point(801, 455);
+            this.button3.Location = new System.Drawing.Point(601, 370);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 57);
+            this.button3.Size = new System.Drawing.Size(90, 46);
             this.button3.TabIndex = 18;
             this.button3.Text = "Prikazi sve podatke";
             this.button3.UseVisualStyleBackColor = false;
@@ -204,9 +216,10 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(936, 455);
+            this.button4.Location = new System.Drawing.Point(702, 370);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 57);
+            this.button4.Size = new System.Drawing.Size(90, 46);
             this.button4.TabIndex = 19;
             this.button4.Text = "Ocisti prikazni prozor";
             this.button4.UseVisualStyleBackColor = false;
@@ -216,20 +229,36 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(1071, 455);
+            this.button5.Location = new System.Drawing.Point(803, 370);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(120, 57);
+            this.button5.Size = new System.Drawing.Size(90, 46);
             this.button5.TabIndex = 20;
             this.button5.Text = "Promeni odeljenje";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.checkBox1.Location = new System.Drawing.Point(18, 36);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(173, 28);
+            this.checkBox1.TabIndex = 21;
+            this.checkBox1.Text = "Fiksiraj predmete";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1236, 563);
+            this.ClientSize = new System.Drawing.Size(927, 457);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -244,6 +273,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -266,5 +296,6 @@
         private System.Windows.Forms.Button button4;
         public System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

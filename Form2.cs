@@ -211,7 +211,11 @@ namespace Drzavna_matura___Jovan_Dragas
                 StreamWriter writer = new StreamWriter("podaci.txt", true);
                 writer.WriteLine(string.Format("{0}, 4-{1}, {2}, {3}, {4} матура, {5}, {6}, {7};", skola, odeljenje, textBox1.Text, textBox2.Text, comboBox1.Text, comboBox2.Text, comboBox3.Text, comboBox4.Text));
                 writer.Close();
-                comboBox2.Text = "1. предмет"; comboBox3.Text = "2. предмет"; comboBox4.Text = "3. предмет"; comboBox5.Text = "Област 3. предмета";
+                if (checkBox1.Checked == false)
+                {
+                    comboBox2.Text = "1. предмет"; comboBox3.Text = "2. предмет"; comboBox4.Text = "3. предмет"; comboBox5.Text = "Област 3. предмета";
+                }
+                textBox1.Text = ""; textBox2.Text = "";
             }
             else
             {
@@ -226,6 +230,10 @@ namespace Drzavna_matura___Jovan_Dragas
         private void button3_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("notepad.exe", "podaci.txt");
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
         }
     }
 }

@@ -48,11 +48,11 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
-            this.textBox1.Location = new System.Drawing.Point(18, 102);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(11, 226);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(212, 26);
+            this.textBox1.Size = new System.Drawing.Size(212, 28);
             this.textBox1.TabIndex = 2;
             this.textBox1.UseWaitCursor = true;
             // 
@@ -60,7 +60,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label1.Location = new System.Drawing.Point(15, 81);
+            this.label1.Location = new System.Drawing.Point(8, 207);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 18);
@@ -70,11 +70,11 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.12F);
-            this.textBox2.Location = new System.Drawing.Point(18, 162);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Location = new System.Drawing.Point(248, 226);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(212, 26);
+            this.textBox2.Size = new System.Drawing.Size(212, 28);
             this.textBox2.TabIndex = 8;
             this.textBox2.UseWaitCursor = true;
             // 
@@ -82,7 +82,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.label2.Location = new System.Drawing.Point(15, 142);
+            this.label2.Location = new System.Drawing.Point(245, 208);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 18);
@@ -97,8 +97,8 @@
             "ОПШТА",
             "СТРУЧНА",
             "УМЕТНИЧКА"});
-            this.comboBox1.Location = new System.Drawing.Point(18, 214);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Location = new System.Drawing.Point(485, 228);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(212, 25);
             this.comboBox1.TabIndex = 10;
@@ -118,8 +118,8 @@
             "Румунски језик и књижевност",
             "Словачки језик и књижевност",
             "Хрватски језик и књижевност"});
-            this.comboBox2.Location = new System.Drawing.Point(18, 274);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox2.Location = new System.Drawing.Point(11, 274);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(212, 25);
             this.comboBox2.TabIndex = 11;
@@ -131,8 +131,8 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Математика"});
-            this.comboBox3.Location = new System.Drawing.Point(18, 328);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox3.Location = new System.Drawing.Point(11, 322);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(212, 25);
             this.comboBox3.TabIndex = 12;
@@ -155,8 +155,8 @@
             "Француски језик",
             "Хемија",
             "Шпански језик"});
-            this.comboBox4.Location = new System.Drawing.Point(18, 399);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox4.Location = new System.Drawing.Point(11, 410);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(212, 25);
             this.comboBox4.TabIndex = 13;
@@ -166,10 +166,10 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(305, 50);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox1.Location = new System.Drawing.Point(6, 11);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(588, 303);
+            this.listBox1.Size = new System.Drawing.Size(910, 186);
             this.listBox1.TabIndex = 14;
             // 
             // comboBox5
@@ -180,8 +180,8 @@
             "ОПШТА",
             "СТРУЧНА",
             "УМЕТНИЧКА"});
-            this.comboBox5.Location = new System.Drawing.Point(18, 370);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox5.Location = new System.Drawing.Point(11, 370);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(332, 25);
             this.comboBox5.TabIndex = 15;
@@ -191,11 +191,11 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(498, 370);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(359, 371);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 46);
+            this.button1.Size = new System.Drawing.Size(122, 64);
             this.button1.TabIndex = 16;
             this.button1.Text = "Unesi podatak";
             this.button1.UseVisualStyleBackColor = false;
@@ -203,11 +203,11 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Yellow;
-            this.button3.Location = new System.Drawing.Point(601, 370);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.Location = new System.Drawing.Point(496, 371);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 46);
+            this.button3.Size = new System.Drawing.Size(122, 64);
             this.button3.TabIndex = 18;
             this.button3.Text = "Prikazi sve podatke";
             this.button3.UseVisualStyleBackColor = false;
@@ -215,11 +215,11 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(702, 370);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.Location = new System.Drawing.Point(633, 370);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 46);
+            this.button4.Size = new System.Drawing.Size(122, 64);
             this.button4.TabIndex = 19;
             this.button4.Text = "Ocisti prikazni prozor";
             this.button4.UseVisualStyleBackColor = false;
@@ -227,12 +227,12 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(803, 370);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(769, 370);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(90, 46);
+            this.button5.Size = new System.Drawing.Size(122, 64);
             this.button5.TabIndex = 20;
             this.button5.Text = "Promeni odeljenje";
             this.button5.UseVisualStyleBackColor = false;
@@ -244,11 +244,11 @@
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.checkBox1.Location = new System.Drawing.Point(18, 36);
+            this.checkBox1.Location = new System.Drawing.Point(264, 274);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(173, 28);
+            this.checkBox1.Size = new System.Drawing.Size(166, 28);
             this.checkBox1.TabIndex = 21;
-            this.checkBox1.Text = "Fiksiraj predmete";
+            this.checkBox1.Text = "Ostavi predmete";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -273,7 +273,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
